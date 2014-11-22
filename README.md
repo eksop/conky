@@ -1,2 +1,2 @@
-dotfiles
+Xitkov's dotfiles
 ========
