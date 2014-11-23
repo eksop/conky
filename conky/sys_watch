@@ -1,0 +1,120 @@
+alignment bottom_right
+background no
+border_margin 4
+border_width 4
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color black
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+#draw_shades no
+draw_shades yes
+use_xft yes
+#xftfont DejaVu Sans Mono:size=10
+xftfont Source Code Pro:size=9
+#xftfont Sans Mono:size=9
+#xftalpha 0.8
+xftalpha 1
+text_buffer_size 2048
+total_run_time 0
+gap_x 25
+gap_y 80
+minimum_size 200 200
+#maximum_width 1000
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+#own_window_argb_visual 	
+own_window_argb_visual yes
+own_window_argb_value 200
+#own_window_transparent 	
+own_window yes
+#own_window_transparent yes
+own_window_class Conky
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+override_utf8_locale no
+double_buffer yes
+stippled_borders 0
+update_interval 2.0
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+
+###  Color Settings  #########################################################
+#default_shade_color black
+#default_outline_color black
+
+#default_color DCDCDC #Gainsboro
+color0 A00000 #Red
+color1 00A000 #Green
+color2 2255A0 #Blue
+color3 A0A000 #Yellow
+color4 00A0A0 #Cyan
+color5 A000A0 #Purple
+color6 A0A0A0 #Grey
+color7 A05522 #Brown
+color8 000000 #Black
+#####################################################  End Color Settings  ###
+
+TEXT
+#${alignc}xitkov's Arch Linux
+#${color2}${alignc}xitkov ${color1}on ${color3}${desktop} ${color6}/ ${color7}${desktop_number}${color}
+#
+#SYSTEM ${hr 2}
+#${color1}${sysname} ${color4}${kernel} ${alignr} ${color7}${machine}
+#${color6}Uptime:${alignr} ${color3}${uptime}${color}
+#${color6}Load ${alignr} ${color7}${loadavg}${color}
+#${color6}Power:  ${color3}${acpiacadapter}${alignr}${color1}${battery_percent}% ${color6}- ${color1}${battery_time}${color}
+#Battery: ${battery_bar}
+#$stippled_hr
+#
+${color2}PROCESSORS ${color4}${hr 2}${color}
+${color6}Processes: ${color3}${processes}  ${alignr}${color6}Running: ${color1}${running_processes}${color}
+${color0}${cpugraph cpu1}${color}
+${color6}CPU1: ${alignr}${color1}${cpu cpu1} ${color7}%${color}
+#CPU1: ${cpu cpu1}% ${cpubar cpu1}
+${color0}${cpugraph cpu2}${color}
+${color6}CPU2: ${alignr}${color1}${cpu cpu2} ${color7}%${color}
+#CPU2: ${cpu cpu2}% ${cpubar cpu2}
+${color6}RAM: ${alignc} ${color1}${mem} ${color6}/ ${color7}${memmax} ${alignr} ${color1}${memperc} ${color7}%${color}
+#$membar
+
+${color2}DISKS ${color4}${hr 2}${color}
+${color0}${diskiograph /dev/sda}${color}
+${color6}root: ${alignc} ${color1}${fs_used /} ${color6}/ ${color7}${fs_size /} ${alignr} ${color1}${fs_used_perc /} ${color7}%${color}
+#${fs_bar /}
+${color6}home: ${alignc} ${color1}${fs_used /home} ${color6}/ ${color7}${fs_size /home} ${alignr} ${color1}${fs_used_perc /home} ${color7}%${color}
+#${fs_bar /home}
+${color6}swap: ${alignc} ${color1}${swap} ${color6}/ ${color7}${swapmax} ${alignr} ${color1}${swapperc} ${color7}%${color}
+#${swapbar}
+
+${color2}NETWORK ${color4}${hr 2}${color}
+${color6}Local Ip: ${alignr}${color3}${addr wlp1s0}${color}
+${color6}ESSID: ${alignr} ${color7}${wireless_essid wlp1s0} ${color6}@ ${alignr}${color1}${wireless_link_qual wlp1s0} ${color7}%${color}
+${color0}${downspeedgraph wlp1s0}${color}
+${color6}D: ${color1}${downspeed wlp1s0} ${alignr}${color6}total: ${alignr}${color3}${totaldown wlp1s0}${color}
+${color0}${upspeedgraph wlp1s0}${color}
+${color6}U: ${color1}${upspeed wlp1s0} ${alignr}${color6}total: ${alignr}${color3}${totalup wlp1s0}${color}
+#Upload: ${alignr}${totalup wlp1s0}
+#
+#${color2}TOP PROCESSES ${color4}${hr 2}${color}
+#${color6} % cpu       name${color}
+#${color3}${top cpu 1}  ${alignr}${color1}${top name 1}${color}
+#${color3}${top cpu 2}  ${alignr}${color1}${top name 2}${color}
+#${color3}${top cpu 3}  ${alignr}${color1}${top name 3}${color}
+#${top cpu 4}  $alignr${top name 4}
+#${top cpu 5}  $alignr${top name 5}
+#$stippled_hr
+#
+#${color6} % mem       name${color}
+#${color3}${top_mem mem 1}  ${alignr}${color1}${top_mem name 1}${color}
+#${color3}${top_mem mem 2}  ${alignr}${color1}${top_mem name 2}${color}
+#${color3}${top_mem mem 3}  ${alignr}${color1}${top_mem name 3}${color}
+#${top_mem mem 4}  $alignr${top_mem name 4}
+#${top_mem mem 5}  $alignr${top_mem name 5}

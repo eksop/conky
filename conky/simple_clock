@@ -1,0 +1,70 @@
+alignment top_right
+background no
+border_margin 4
+border_width 4
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color black
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+#draw_shades no
+draw_shades yes
+use_xft yes
+#xftfont DejaVu Sans Mono:size=10
+xftfont Source Code Pro:size=9
+#xftfont Sans Mono:size=9
+#xftalpha 0.8
+xftalpha 1
+text_buffer_size 2048
+total_run_time 0
+gap_x 25
+gap_y 25
+minimum_size 200 200
+#maximum_width 1000
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+#own_window_argb_visual 	
+own_window_argb_visual yes
+own_window_argb_value 0
+#own_window_transparent 	
+own_window yes
+#own_window_transparent yes
+own_window_class Conky
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+override_utf8_locale no
+double_buffer yes
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer none
+show_graph_scale no
+show_graph_range no
+
+#default_color DCDCDC #Gainsboro
+###  Color Settings  #########################################################
+#default_shade_color black
+#default_outline_color black
+
+#default_color DCDCDC #Gainsboro
+color1 A03030 #Red
+color2 30A030 #Green
+color0 3030A0 #Blue
+color3 A0A040 #Yellow
+color5 40A0A0 #Cyan
+color4 A05030 #Purple
+color6 404040 #Grey
+color7 A05522 #Brown
+color8 000000 #Black
+#####################################################  End Color Settings  ###
+
+TEXT
+${font URW Gothic L:bold:size=60}${color0}${time %H}${font URW Gothic L:bold:size=12}${color6} ${font URW Gothic L:bold:size=32}${color1}${time %M}${font URW Gothic L:bold:size=12}${color6} ${font URW Gothic L:bold:size=13}${color2}${time %S}${color}
+${color6}${hr 2}
+${font Source Code Pro:bold:size=14}${alignc}${color3}${time %A}
+${alignc}${font Source Code Pro:bold:size=20}${color4}${time %e} ${font Source Code Pro:bold:size=14}${color5}${time %B}

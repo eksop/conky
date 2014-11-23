@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DF_REPO="~/code/dotfiles"
+DF_REPO="${HOME}/code/dotfiles"
 
 #echo -e "Commencing"
 
