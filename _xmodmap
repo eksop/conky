@@ -1,7 +1,0 @@
-! Xmodmap file !
-
-! Replacing Caps_Lock and making it as Control_L
-
-keycode 66 = Control_L
-clear Lock
-add Control = Control_L
