@@ -1,2 +1,1 @@
-Xitkov's dotfiles
-========
+Conky configuration files
